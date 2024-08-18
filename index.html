@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Passenger Counter</title>
+    </head>
+
+    <body>
+
+        <div class="complete_wrapper">
+            
+            <div class="reset_wrapper">
+                <h1 class="display_reset" id="displayReset" onclick="tallyReset()">RESET</h1>
+            </div>
+            
+            <div class="display_wrapper">
+                <h1 class="display_counter" id="displayCounter" onclick="tallyIncrement()">0</h1>
+            </div>
+
+            <div class="save_wrapper">
+                <h1 class="display_save" id="displaySave" onclick="tallySave()">SAVE</h1>
+            </div>
+
+            <div class="saved_entries_wrapper">
+                <h1 class="display_save_count" id="displaySaveCount"></h1>
+            </div>
+
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+
+</html>

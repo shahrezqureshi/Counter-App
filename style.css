@@ -1,3 +1,9 @@
+:root {
+    --base-color: white;
+    --text-color: #007AFF;
+    --border-color: #06C;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -5,7 +11,7 @@
 }
 
 body {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .complete_wrapper {
@@ -22,36 +28,87 @@ body {
 }
 
 .display_wrapper .display_counter {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 256px;
-    color: #fefefe;
-    text-shadow: 0px 20px 30px rgb(215, 215, 215);
+    padding: 20% 0%;
+    font-family: "Inter", sans-serif;
+    font-size: 172px;
+    color: var(--text-color);
+    text-shadow: 0px 20px 30px rgb(228, 228, 228)
+}
+
+.save_reset_wrapper {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    column-gap:8px;
+    user-select: none;
+    bottom: 50px;
 }
 
 .reset_wrapper {
-    position: absolute;
+    position: relative;
     user-select: none;
-    top:50px;
 }
 
 .reset_wrapper .display_reset {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 32px;
-    color: rgb(221, 221, 221);
+    background-color: white;
+    width: 80px;
+    
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color:var(--border-color);
+    text-align: center;
+    transition: all 0.15s ease-out;
 }
 
-.save_wrapper {
-    position: absolute;
+.reset_wrapper .display_reset:hover {
+    background-color: var(--border-color);
+    color: white;
+}
+
+.reset_wrapper .display_reset:active {
+    background-color: var(--border-color);
+    color: white;
+}
+
+/* .save_wrapper {
+    position: relative;
     user-select: none;
-    bottom:50px;
 }
 
 .save_wrapper .display_save {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 32px;
-    color: rgb(221, 221, 221);
+    background-color: white;
+    width: 80px;
+    
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--border-color);
     text-align: center;
+    transition: all 0.15s ease-out;
 }
+
+.save_wrapper .display_save:hover {
+    background-color: var(--border-color);
+    color: white;
+}
+
+.save_wrapper .display_save:active {
+    background-color: var(--border-color);
+    color: white;
+} */
 
 .saved_entries_wrapper {
     position: absolute;
@@ -60,7 +117,7 @@ body {
 }
 
 .saved_entries_wrapper .display_save_count {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.5em;
     color: rgb(230, 230, 230);
     text-align: center;

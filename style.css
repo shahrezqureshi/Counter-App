@@ -12,6 +12,12 @@
 
 body {
     font-family: "Inter", sans-serif;
+
+}
+
+h1 {
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .complete_wrapper {
@@ -21,15 +27,17 @@ body {
     align-items: center;
     min-height: 100vh;
     min-height: 100svh;
-    width: 100vw;
+    min-width: 100vw;
+    min-width: 100dvw;
 }
 
 .display_wrapper {
+    position: relative;
     user-select: none;
 }
 
 .display_wrapper .display_counter {
-    padding: 20% 0%;
+    padding: 0% auto;
     font-family: "Inter", sans-serif;
     font-size: 172px;
     color: var(--text-color);

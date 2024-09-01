@@ -34,7 +34,7 @@ const tallyReset = () => {
 
 // This is merely setting the initial display of the web-page based 
 // on the tallyCount loaded from localStorage
-if (tallyCount === nul) {
+if (tallyCount === null) {
     displayVar.textContent = 0 
 } else {
         displayVar.textContent = tallyCount

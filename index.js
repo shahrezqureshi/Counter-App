@@ -1,10 +1,10 @@
-// JSON.parse() function is being used to retrieve the string
-// value of tallyCountSaved key into a variable called tallyCount
-tallyCount = JSON.parse(localStorage.getItem('tallyCountSaved'))
-
 // The web-page element with an ID of 'displayCounter' is
 // being loaded into a variable called 'displayVar' for easy access
 let displayVar = document.getElementById("displayCounter")
+
+// JSON.parse() function is being used to retrieve the string
+// value of tallyCountSaved key into a variable called tallyCount
+tallyCount = JSON.parse(localStorage.getItem('tallyCountSaved'))
 
 // Increment function is adding 1 to the tallyCount variable 
 // (which has the tallyCountSaved value loaded from localStorage)
@@ -34,4 +34,8 @@ const tallyReset = () => {
 
 // This is merely setting the initial display of the web-page based 
 // on the tallyCount loaded from localStorage
-displayVar.textContent = tallyCount
+if (tallyCount === nul) {
+    displayVar.textContent = 0 
+} else {
+        displayVar.textContent = tallyCount
+}

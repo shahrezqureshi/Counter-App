@@ -1,12 +1,4 @@
 :root {
-    /* --base-color: rgb(225, 223, 228);
-    --text-color:rgb(0, 122, 255);
-    --border-color: rgb(0, 122, 255);
-    --emph-btn-text-color: rgb(255, 255, 255);
-    --emph-btn-bg-color: rgb(0, 122, 255);
-    --normal-btn-text-color: rgb(0, 122, 255);
-    --normal-btn-hover-text-color: rgb(255, 255, 255); */
-
     --base-color: rgb(255, 255, 255);
     --modal_base_color: rgba(255, 255, 255, 0.7);
     --text-color:rgb(0, 0, 0);
@@ -39,14 +31,13 @@ body {
     background-color: var(--base-color);
 }
 
-
 .save_modal {
     display: flex;
     height: 100dvh;
     width: 100dvw;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     justify-content: center;
     align-items: center;
     background-color: var(--modal_base_color);
@@ -119,8 +110,8 @@ body {
     max-height: 100svh;
     min-width: 100vw;
     min-width: 100dvw;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
 }
 
 #theme_switch {
@@ -151,9 +142,6 @@ body {
     display: none;
 }
 
-
-
-
 .top_container {
     display: flex;
     justify-content: flex-end;
@@ -177,6 +165,7 @@ body {
     max-height: 80dvh;
     min-width: 100vw;
     min-width: 100dvw;
+    touch-action: manipulation;
 }
 
 .display_container .display_counter {

@@ -10,6 +10,7 @@ const enableDarkMode = () => {
 
 const disableDarkMode = () => {
     document.body.classList.remove('dark_mode')
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#FFFFFF');
     localStorage.setItem('darkModeStatus', null)
 }
 

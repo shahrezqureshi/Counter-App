@@ -58,8 +58,7 @@ if (tallyCount === null) {
 
 
 
-// 
-
+// Display Button which on tap would initiate the increment function
 displayButton.addEventListener ("click", () => {
     tallyIncrement()
 })
